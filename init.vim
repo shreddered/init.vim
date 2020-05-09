@@ -1,29 +1,33 @@
+" enumerate lines
 set nu
 
+" wildmenu
 set wildmenu
 set wildignore=*.o,*~
 
+" all about searching
 set hlsearch
 set incsearch
+set smartcase
 
+" indention
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set smarttab
 
+set ai
+set si
+
+" no bells on mac
 set noerrorbells
 set novisualbell
 set vb t_vb=
 
+" required
 set nocompatible
 filetype off
-
-set ai
-set si
-
-set laststatus=2
-set noshowmode
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -45,11 +49,17 @@ Plugin 'bfrg/vim-cpp-modern'
 
 call vundle#end()
 
+" required
 filetype plugin indent on
+
+" powerline tweaking
+set laststatus=2
+set noshowmode
 
 " colorscheme & syntax highlighting
 syntax enable
 
+" cool colors
 if has("termguicolors")
     set termguicolors
 endif
@@ -58,10 +68,12 @@ let g:material_style='oceanic'
 set background=dark
 colo vim-material
 
+" TODO: maybe improve it
 set path+=:pwd/include
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
+" shortcut for NERD
 command Tree NERDTree
 
 " NERD Tree files highlighting
