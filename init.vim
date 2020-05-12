@@ -47,6 +47,10 @@ Plugin 'bfrg/vim-cpp-modern'
 
 "Plugin 'vim-scripts/Conque-GDB'
 
+Plugin 'godlygeek/tabular'
+
+Plugin 'plasticboy/vim-markdown'
+
 call vundle#end()
 
 " required
