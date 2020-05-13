@@ -79,7 +79,8 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 
 " shortcut for NERD
 command Tree NERDTreeToggle
-nmap <Space>t :Tree<Enter>
+execute "set <M-t>=\et"
+nmap <M-t> :Tree<Enter>
 
 " NERD Tree files highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
@@ -103,3 +104,12 @@ call NERDTreeHighlightFile('h', 'Red', 'none', 'Red', '#151515')
 " markdown
 call NERDTreeHighlightFile('md', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('markdown', 'cyan', 'none', 'cyan', '#151515')
+
+" for mistakes
+command W w
+command Q q
+
+" this is where magic happens
+
+nmap <C-n> :tabnew<Enter>
+nmap <Tab> gt
