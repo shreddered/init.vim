@@ -78,7 +78,8 @@ set path+=:pwd/include
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
 " shortcut for NERD
-command Tree NERDTree
+command Tree NERDTreeToggle
+nmap <Space> :Tree<Enter>
 
 " NERD Tree files highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
