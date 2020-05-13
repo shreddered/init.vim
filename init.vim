@@ -45,11 +45,11 @@ Plugin 'hzchirs/vim-material'
 " c++ source code highlighting
 Plugin 'bfrg/vim-cpp-modern'
 
-"Plugin 'vim-scripts/Conque-GDB'
-
 Plugin 'godlygeek/tabular'
 
 Plugin 'plasticboy/vim-markdown'
+
+Plugin 'preservim/nerdcommenter'
 
 call vundle#end()
 
@@ -79,6 +79,7 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 
 " shortcut for NERD
 command Tree NERDTreeToggle
+
 execute "set <M-t>=\et"
 nmap <M-t> :Tree<Enter>
 
@@ -104,6 +105,8 @@ call NERDTreeHighlightFile('h', 'Red', 'none', 'Red', '#151515')
 " markdown
 call NERDTreeHighlightFile('md', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('markdown', 'cyan', 'none', 'cyan', '#151515')
+
+let g:NERDSpaceDelims = 1
 
 " for mistakes
 command W w
