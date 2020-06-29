@@ -100,6 +100,7 @@ call NERDTreeHighlightFile('c', 'blue', 'none', 'blue', '#151515')
 call NERDTreeHighlightFile('hpp', 'Red', 'none', 'Red', '#151515')
 call NERDTreeHighlightFile('hxx', 'Red', 'none', 'Red', '#151515')
 call NERDTreeHighlightFile('h++', 'Red', 'none', 'Red', '#151515')
+call NERDTreeHighlightFile('hh', 'Red', 'none', 'Red', '#151515')
 call NERDTreeHighlightFile('h', 'Red', 'none', 'Red', '#151515')
 
 " markdown
