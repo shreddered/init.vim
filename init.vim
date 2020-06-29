@@ -47,7 +47,7 @@ Plugin 'bfrg/vim-cpp-modern'
 
 Plugin 'godlygeek/tabular'
 
-Plugin 'plasticboy/vim-markdown'
+"Plugin 'plasticboy/vim-markdown'
 
 Plugin 'preservim/nerdcommenter'
 
