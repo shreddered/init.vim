@@ -3,7 +3,7 @@ set nu
 
 " wildmenu
 set wildmenu
-set wildignore=*.o,*~
+set wildignore=*.o,*~,*.swp
 
 " all about searching
 set hlsearch
