@@ -73,7 +73,7 @@ set background=dark
 colo vim-material
 
 " TODO: maybe improve it
-set path+=:pwd/include
+"set path+=:pwd/include
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
