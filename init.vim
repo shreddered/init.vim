@@ -51,6 +51,8 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'preservim/nerdcommenter'
 
+Plugin 'hardcoreplayers/oceanic-material'
+
 call vundle#end()
 
 " required
@@ -68,9 +70,9 @@ if has("termguicolors")
     set termguicolors
 endif
 
-let g:material_style='oceanic'
+" let g:material_style='oceanic'
 set background=dark
-colo vim-material
+colo oceanic_material
 
 " TODO: maybe improve it
 "set path+=:pwd/include
