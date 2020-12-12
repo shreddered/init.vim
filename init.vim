@@ -115,3 +115,7 @@ command Q q
 
 nmap <C-n> :tabnew<Enter>
 nmap <Tab> gt
+
+" special settings for different filetypes
+autocmd FileType cmake setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType proto setlocal tabstop=4 shiftwidth=4 softtabstop=4
