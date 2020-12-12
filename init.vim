@@ -70,12 +70,8 @@ if has("termguicolors")
     set termguicolors
 endif
 
-" let g:material_style='oceanic'
 set background=dark
 colo oceanic_material
-
-" TODO: maybe improve it
-"set path+=:pwd/include
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 
