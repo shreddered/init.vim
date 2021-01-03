@@ -81,30 +81,6 @@ command Tree NERDTreeToggle
 execute "set <M-t>=\et"
 nmap <M-t> :Tree<Enter>
 
-" NERD Tree files highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-" c/c++ sources
-call NERDTreeHighlightFile('cpp', 'blue', 'none', 'blue', '#151515')
-call NERDTreeHighlightFile('cxx', 'blue', 'none', 'blue', '#151515')
-call NERDTreeHighlightFile('c++', 'blue', 'none', 'blue', '#151515')
-call NERDTreeHighlightFile('cc', 'blue', 'none', 'blue', '#151515')
-call NERDTreeHighlightFile('c', 'blue', 'none', 'blue', '#151515')
-
-" c/c++ headers
-call NERDTreeHighlightFile('hpp', 'Red', 'none', 'Red', '#151515')
-call NERDTreeHighlightFile('hxx', 'Red', 'none', 'Red', '#151515')
-call NERDTreeHighlightFile('h++', 'Red', 'none', 'Red', '#151515')
-call NERDTreeHighlightFile('hh', 'Red', 'none', 'Red', '#151515')
-call NERDTreeHighlightFile('h', 'Red', 'none', 'Red', '#151515')
-
-" markdown
-call NERDTreeHighlightFile('md', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('markdown', 'cyan', 'none', 'cyan', '#151515')
-
 let g:NERDSpaceDelims = 1
 
 " for mistakes
