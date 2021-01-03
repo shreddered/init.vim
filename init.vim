@@ -35,8 +35,10 @@ call vundle#begin()
 " required
 Plugin 'VundleVim/Vundle.vim'
 
+" source code tree
 Plugin 'preservim/nerdtree'
 
+" nice status line
 Plugin 'itchyny/lightline.vim'
 
 " colorscheme
@@ -47,10 +49,10 @@ Plugin 'bfrg/vim-cpp-modern'
 
 Plugin 'godlygeek/tabular'
 
-"Plugin 'plasticboy/vim-markdown'
-
+" nice commenter
 Plugin 'preservim/nerdcommenter'
 
+" also colorscheme
 Plugin 'hardcoreplayers/oceanic-material'
 
 call vundle#end()
