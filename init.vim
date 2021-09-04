@@ -1,35 +1,66 @@
-" enumerate lines
+" =============================================================================
+" This is my .vimrc 
+" =============================================================================
+
+" =============================================================================
+" Options 
+" =============================================================================
+
+" colorscheme & syntax highlighting
+syntax enable
+
+" line numbers
 set nu
 
-" wildmenu
+" wildmenu (hints in the command mode)
 set wildmenu
+" meta files ignored
 set wildignore=*.o,*~,*.swp
 
-" all about searching
+" Searching
+" highlight results
 set hlsearch
 set incsearch
 set smartcase
 
-" indention
+" =============================================================================
+" Indents 
+" =============================================================================
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+" expand tab to spaces
 set expandtab
 set smarttab
-
+" autoindent and smartindent
 set ai
 set si
+
+" special settings for different filetypes
+autocmd FileType cmake setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType proto setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " no bells on mac
 set noerrorbells
 set novisualbell
 set vb t_vb=
 
+" cool colors
+if has("termguicolors")
+    set termguicolors
+endif
+
+" =============================================================================
+" Vunlde stuff
+" =============================================================================
+
 " required
 set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" Plugins
 call vundle#begin()
 
 " required
@@ -49,7 +80,7 @@ Plugin 'bfrg/vim-cpp-modern'
 
 Plugin 'godlygeek/tabular'
 
-" nice commenter
+" nerd commenter
 Plugin 'preservim/nerdcommenter'
 
 " also colorscheme
@@ -60,28 +91,23 @@ call vundle#end()
 " required
 filetype plugin indent on
 
-" powerline tweaking
+" =============================================================================
+" Powerline tweaks
+" =============================================================================
+
 set laststatus=2
 set noshowmode
 
-" colorscheme & syntax highlighting
-syntax enable
-
-" cool colors
-if has("termguicolors")
-    set termguicolors
-endif
-
+" =============================================================================
+" Colorscheme
+" =============================================================================
 set background=dark
 colo oceanic_material
 
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-
-" shortcut for NERD
-command Tree NERDTreeToggle
-
+" =============================================================================
+" NERD Tree tweaks
+" =============================================================================
 execute "set <M-t>=\et"
-nmap <M-t> :Tree<Enter>
 
 let g:NERDSpaceDelims = 1
 
@@ -89,11 +115,21 @@ let g:NERDSpaceDelims = 1
 command W w
 command Q q
 
-" this is where magic happens
+" =============================================================================
+" Mappings 
+" =============================================================================
 
-nmap <C-n> :tabnew<Enter>
-nmap <Tab> gt
+" =============================================================================
+" Normal mode mappings 
+" =============================================================================
 
-" special settings for different filetypes
-autocmd FileType cmake setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType proto setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" tab management 
+map <leader>tn :tabnew<cr>
+map <leader>tc :tabclose<cr>
+map <Tab> gt
+
+" NERD Tree map
+map <M-t> :NERDTreeToggle<cr>
+
+" disable highlights on <leader><cr>
+map <silent> <leader><cr> :noh<cr>
