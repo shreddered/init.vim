@@ -131,7 +131,7 @@ map <leader>tc :tabclose<cr>
 map <Tab> gt
 
 " NERD Tree map
-map <M-t> :NERDTreeToggle<cr>
+map <silent> <M-t> :NERDTreeToggle<cr>
 
 " disable highlights on <leader><cr>
 map <silent> <leader><cr> :noh<cr>
