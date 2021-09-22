@@ -5,5 +5,5 @@ $ git clone --recursive git@github.com:shreddered/init.vim.git ~/.vim/
 ```
 2) Run this command
 ```sh
-$ vim +PLuginInstall +qall
+$ vim +PluginInstall +qall
 ```
