@@ -72,9 +72,6 @@ Plugin 'preservim/nerdtree'
 " nice status line
 Plugin 'itchyny/lightline.vim'
 
-" colorscheme
-Plugin 'hzchirs/vim-material'
-
 " c++ source code highlighting
 Plugin 'bfrg/vim-cpp-modern'
 
@@ -83,9 +80,7 @@ Plugin 'godlygeek/tabular'
 " nerd commenter
 Plugin 'preservim/nerdcommenter'
 
-" also colorscheme
-Plugin 'hardcoreplayers/oceanic-material'
-
+" colorscheme
 Plugin 'sainnhe/sonokai'
 
 call vundle#end()
