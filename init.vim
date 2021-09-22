@@ -86,6 +86,8 @@ Plugin 'preservim/nerdcommenter'
 " also colorscheme
 Plugin 'hardcoreplayers/oceanic-material'
 
+Plugin 'sainnhe/sonokai'
+
 call vundle#end()
 
 " required
@@ -103,7 +105,7 @@ set noshowmode
 " =============================================================================
 
 set background=dark
-colo oceanic_material
+colo sonokai
 
 " =============================================================================
 " NERD Tree tweaks
