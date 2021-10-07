@@ -83,6 +83,9 @@ Plugin 'preservim/nerdcommenter'
 " colorscheme
 Plugin 'sainnhe/sonokai'
 
+" YouCompleteMe
+Plugin 'ycm-core/YouCompleteMe'
+
 call vundle#end()
 
 " required
@@ -132,3 +135,5 @@ map <silent> <M-t> :NERDTreeToggle<cr>
 
 " disable highlights on <leader><cr>
 map <silent> <leader><cr> :noh<cr>
+
+map <silent> <leader>gtd :YcmCompleter GoToDefinition<cr>
