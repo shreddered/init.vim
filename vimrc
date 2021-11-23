@@ -39,6 +39,7 @@ set si
 " special settings for different filetypes
 autocmd FileType cmake setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType proto setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType haskell setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " no bells on mac
 set noerrorbells
@@ -85,6 +86,9 @@ Plugin 'sainnhe/sonokai'
 
 " YouCompleteMe
 Plugin 'ycm-core/YouCompleteMe'
+
+" haskell
+Plugin 'neovimhaskell/haskell-vim'
 
 call vundle#end()
 
