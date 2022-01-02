@@ -11,6 +11,7 @@ syntax enable
 
 " line numbers
 set nu
+set relativenumber
 
 " wildmenu (hints in the command mode)
 set wildmenu
